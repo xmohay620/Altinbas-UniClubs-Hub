@@ -1,0 +1,36 @@
+:root {
+    --main-blue: #004a99;
+    --dark-blue: #003366;
+    --bg-gray: #f4f7f9;
+}
+
+body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg-gray); margin: 0; padding: 0; transition: 0.3s; }
+
+/* Header */
+header {
+    background: linear-gradient(135deg, var(--main-blue), var(--dark-blue));
+    color: white; padding: 40px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+header img { width: 220px; background: white; padding: 10px; border-radius: 8px; margin-bottom: 15px; }
+header input { padding: 12px; width: 60%; border-radius: 25px; border: none; font-size: 16px; margin-top: 15px; }
+
+/* Accessibility Bar */
+.accessibility-bar { background: #222; padding: 10px; text-align: center; }
+.accessibility-bar button, .accessibility-bar a {
+    color: white; border: 1px solid white; background: none; padding: 6px 15px; cursor: pointer; margin: 0 5px; text-decoration: none; border-radius: 4px;
+}
+
+/* Club Cards */
+#clubsContainer { display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; padding: 40px; }
+.club-card {
+    background: white; width: 300px; padding: 25px; border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08); border-top: 6px solid var(--main-blue); text-align: center;
+}
+.club-card img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-bottom: 15px; border: 2px solid #eee; }
+.club-card h2 { color: var(--main-blue); margin: 10px 0; }
+.club-card button { background: var(--main-blue); color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: bold; }
+
+/* Tables & Forms */
+table { width: 100%; border-collapse: collapse; background: white; margin-top: 20px; border-radius: 8px; overflow: hidden; }
+th { background: var(--main-blue); color: white; padding: 15px; }
+td { padding: 12px; border-bottom: 1px solid #ddd; text-align: center; }
